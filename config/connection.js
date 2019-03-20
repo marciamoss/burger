@@ -3,7 +3,14 @@ const mysql = require("mysql");
 
 require("dotenv").config();
 var keys = require("../keys.js");
-const connection = mysql.createConnection( keys.dbpassword);
+var connection ;
+
+if(process.env.JAWSDB_URL){
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+}else{
+  connection = mysql.createConnection(keys.dbpassword);
+}
+
 
 // Make connection.
 connection.connect(err => {
