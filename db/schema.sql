@@ -7,6 +7,7 @@ create table burgers (
  id int not null auto_increment,
  burger_name varchar(50),
  devoured boolean not null default 1,
+ createdAT TIMESTAMP not null default CURRENT_TIMESTAMP,
  primary key(id)
 );
 
