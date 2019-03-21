@@ -2,6 +2,6 @@
 use burgers_db;
 
 insert into burgers(burger_name) 
-values('Double Cheese Burger'),('Bacon cheeseburger'),('Barbecue burger');
+values('Double Cheese Burger'),('Bacon Cheese Burger'),('Barbecue Burger');
 
 select * from burgers;

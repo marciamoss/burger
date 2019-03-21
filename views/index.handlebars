@@ -1,19 +1,19 @@
 {{!-- display the new burger --}}
 <div class="container ">
   <div class="row">
-    <div class="col-md-4 col-lg-4"></div>
-    <div class="col-md-4 col-lg-4">
+    <div class="col-0 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
+    <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
       <h1>Eat-Da-Burger!</h1>
     </div>
-    <div class="col-md-4 col-lg-4"></div>
+    <div class="col-0 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
   </div>
   <div class="row"> 
-    <div class="col-md-4 col-lg-4"></div>  
-    <div class="col-md-4 col-lg-4"><img src="assets/img1.png"></div>
-    <div class="col-md-4 col-lg-4"></div>
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>  
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"><img src="assets/img1.png"></div>
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
   </div>
   <div class="row"> 
-    <div class="col-md-4 col-lg-4">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
       <ul> 
         {{#each burgers}}
           {{#if devoured}}
@@ -22,7 +22,7 @@
         {{/each}}
       </ul>
     </div>  
-    <div class="col-md-4 col-lg-4">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
       <form class="create-form">
         <div class="form-group">
           <label for="bu"></label>
@@ -34,7 +34,7 @@
         <button id="submit" type="submit">Submit</button>
       </form>
     </div>
-    <div class="col-md-4 col-lg-4">
+    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
       <ul>
         {{#each burgers}}
           {{#unless devoured}}
